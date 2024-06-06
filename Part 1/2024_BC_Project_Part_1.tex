@@ -1,0 +1,389 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{AP Calculus BC Project Topic 1 4th Hour}
+\author{William Li, 10th Grade}
+\date{May 2024}
+\setlength{\parindent}{0pt}
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+
+\topmargin 0in
+\headheight 0in
+\headsep 0in
+\textheight 9in
+\textwidth 6.5in
+\oddsidemargin 0in
+\evensidemargin 0in
+
+% Macros
+\newcommand \der {\frac {dy} {dx}}
+\newcommand \ders {\left( \frac {dy} {dx} \right)^{2}}
+\newcommand \dder {\dfrac {dy} {dx}}
+\newcommand \derr {\frac {d^{2}y} {dx^2}}
+\newcommand \derrr {\frac {d^{3}y} {dx^3}}
+\newcommand \deralpha {\frac {d\beta} {d\alpha}}
+
+\usepackage{amsmath} 
+\usepackage[utf8]{inputenc}
+\usepackage{comment}
+\usepackage{ctex}
+
+\usepackage{amssymb}
+
+
+\def\quad{\hskip1em\relax}
+\def\qquad{\hskip2em\relax}
+
+\begin{comment}
+
+\usepackage{ctex}
+\usepackage{ctex}
+\usepackage{ctex}
+
+adding the following package, it resolves the error for \mathbb{R}
+\usepackage{amssymb}
+
+this section will be commenting out the whole block 
+\addtolength{\voffset}{-4cm}
+\addtolength{\voffset}{4cm}
+\end{comment}
+
+\begin{document}
+
+\maketitle
+
+\LARGE Part 1: Introduction
+
+\hspace{1cm}
+
+\Large Topic: Indeterminate Limits
+
+Sources: AoPS Calculus Book, AoPS Calculus Lecture Problems, Khan Academy, Mathematics Stack Exchange, and Myself.
+
+
+
+\newpage
+
+\begin{comment}
+	Indeterminate Limits Problems
+\end{comment}
+
+\LARGE Part 2: Problems
+
+\vspace{2cm}
+
+\large
+
+% Simply indeterminante Limits
+\textbf{Problem 1} Compute $\displaystyle \lim_{x \rightarrow \infty} \frac{7x^5 - x^3 + 20}{9x^5+8x^4-x+12}$.\\
+\textit{Source: Art of Problem Solving Calculus Book.}
+
+\vspace{1cm}
+
+% 0/0
+\textbf{Problem 2} What is $\displaystyle \lim_{x \to 0} \dfrac {\tan{x^2}} {x}$.\\
+\textit{Source: I made it up.}
+
+\vspace{1cm}
+
+% inf - inf
+\textbf{Problem 3} Compute $\displaystyle \lim_{x \rightarrow \infty} \left( x - x \cos \left( \frac{1}{x} \right) \right).$\\
+\textit{Source: Art of Problem Solving.}
+
+\vspace{1cm}
+
+% Looks like indeterminante, actually determinante limit
+\textbf{Problem 4}  Let $a$ be a positive constant. What is the value of $\displaystyle \lim_{x\to\infty} \dfrac{\log(x)}{x^a}$?\\
+\textit{Source: Art of Problem Solving Calculus Forum.}
+
+\vspace{1cm}
+
+% random
+\textbf{Problem 5} Find an ordered pair $(a,b)$ such that $\displaystyle \lim_{x\to 1}\frac{x^2+ax+3}{(x-1)(x-b)}=6$.\\
+\textit{Source: Khan Academy.}
+
+\vspace{1cm}
+
+% inf^0
+\textbf{Problem 6} Compute $\displaystyle \lim_{x \rightarrow \infty} (nx)^{\frac{1}{mx}}$ where $n \neq 0.$\\
+\textit{Source: I made it up.}
+
+\vspace{1cm}
+
+% 0 * inf
+\textbf{Problem 7} What is $\displaystyle \lim_{x \to 0} e^{x^2} \cot{x^2}$?\\
+\textit{Source: Khan Academy.}
+
+\vspace{1cm}
+
+% 0^0
+\textbf{Problem 8} What is $\displaystyle \lim_{x \to 0} 16 \left( e^x \right)^{e^{x}} $?\\
+\textit{Source: Khan Academy.}
+
+\vspace{1cm}
+
+% Wild Card
+\textbf{Problem 9} Compute $\displaystyle \lim_{x \rightarrow \infty} \left( \sqrt{x^2-x} - \sqrt{x^2+x} \right).$\\
+\textit{Source: Art of Problem Solving Calculus Book.}
+
+\vspace{1cm}
+
+% inf^0 with improper integral
+\textbf{Problem 10} What is $\displaystyle \lim_{x \to 0} \left( \cot{x} \right)^{\sin{x}}$?\\
+\textit{Source: Art of Problem Solving.}
+
+\vspace{1cm}
+
+% nth term test
+\textbf{Problem 11} Does the series $\displaystyle \sum_{n = 0}^{\infty} \left( 1 + n \right)^{\frac {1} {n}}$ converge or diverge?\\
+\textit{Source: Art of Problem Solving Calculus Book.}
+
+\vspace{1cm}
+
+% inf - inf with improper integral
+\textbf{Problem 12} Find $\displaystyle \lim_{n \to \infty} \left( 1 + \left( \frac {1} {2} \right)^{x}\right)^{x}$ \\
+\textit{Source: Mathematics Stack Exchange.}
+
+\vspace{1cm}
+
+
+\textbf{Problem 13} Calculate $\displaystyle \lim_{x \to \infty} \left( 1 + \frac {1} {x} \right)^{\sum_{n = 1}^{x} \frac {1} {n}} $\\
+% Make a problem with limit and []^{inf series that diverges}
+\textit{Source: I made it up.}
+
+\vspace{1cm}
+
+% inf - inf
+\textbf{Problem 14} Find $\displaystyle \int_{1}^{e} \frac {1} {\left( x - 1 \right)^{2}} - \frac {1} {x\ln^{2} \left( x \right)} dx$\\
+\textit{Source: I made it up.}
+
+\vspace{1cm}
+
+\textbf{Problem 15} The graph $y = d(x)$ has a slant asymptote along the line $y = mx + b$ (with $m \not= 0$) if
+$$
+\displaystyle\lim_{x \rightarrow \infty} |d(x) - (mx+b)| = 0.
+$$Describe algebraically the conditions for a rational function $\dfrac{f(x)}{g(x)}$ to have a slant asymptote, where $f$ and $g$ are polynomials.
+
+\textit{Make sure to prove that your conditions are both necessary and sufficient.}\\
+\textit{Source: Art of Problem Solving Calculus Forum.}
+
+
+
+\newpage
+
+\begin{comment}
+	Indeterminate Limits Solutions
+\end{comment}
+
+\LARGE Part 3: Solutions
+
+\vspace{2cm}
+
+\large
+
+\textbf{Solution for Problem 1} The limit as $x$ approaches infinity of a rational function with equal powers in the numerator and denominator is the ratio of the leading coefficients, which in this case is $\boxed{\frac{7}{9}}$. We can reuse that proof by dividing both numerator and denominator by $x^5$ which yields\\
+$$ \lim_{x \rightarrow \infty} \frac{7 - \frac{1}{x^2} + \frac{20}{x^5}}{9+\frac{8}{x}-\frac{1}{x^4}+\frac{12}{x^5}} = \frac{7-0+0}{9+0-0+0} = \boxed{\frac{7}{9}}.$$
+
+\vspace{1cm}
+
+
+
+\textbf{Solution for Problem 2} If we were to plug in $x = 0$, we would get $\frac {0} {0}$, so we apply L'Hopital's Rule.
+\[= \lim_{x \to 0} 2x\sec^{2}x^{2}\]
+\[= \boxed{0}.\]
+
+\vspace{1cm}
+
+
+
+\textbf{Solution for Problem 3} Let $y = -\frac{1}{x}$ and note that as $x \rightarrow \infty$, we have $y \rightarrow 0^-$. Then, the limit becomes\\
+\[\lim_{y \rightarrow 0^-} \frac{-1}{y} + \frac{1}{y}\cos(-y) = \lim_{y \rightarrow 0^-} \frac{\cos(-y) -1}{y} = \lim_{y \rightarrow 0^-} \frac{\cos(y) -1}{y},\]which we know equals $\boxed{0}.$
+
+\vspace{1cm}
+
+
+
+\textbf{Solution for Problem 4} Since $a>0$, we know that $\lim_{x\to\infty} x^a=\infty$. (If $a<0$, then $\lim_{x\to\infty} x^a=0$, and if $a=0$, then $\lim_{x\to\infty} x^a=1$.) Since $\lim_{x\to\infty}\log(x)=\infty$, so our limit is of the form $\dfrac{\infty}{\infty}$. Applying L'Hopital's Rule shows us that
+$$\lim_{x\to\infty}\dfrac{\log(x)}{x^a}=\lim_{x\to\infty}\dfrac{1/x}{ax^{a-1}}=\lim_{x\to\infty}\dfrac{1}{ax^a}.$$We recognize that, in the denominator, $x^a\to\infty$, and since $a>0$, we know that $ax^a\to\infty$ as well. Thus, our new limit is of the form $\dfrac{1}{\infty}$, so the value of the limit is $\boxed{0}$.\\
+
+\vspace{1cm}
+
+
+
+\textbf{Solution for Problem 5} The limit of the denominator is $0$, and so the limit of the numerator must also be $0$ lest the fraction approach $\infty$, $-\infty$, or have no limit at all. Thus, we have
+\begin{align*}
+	\lim_{x\to 1} (x^2+ax+3) &= 0 \\
+	a+4 &= 0 \\
+	a &= -4.
+\end{align*}
+Since the limit is of the form $\dfrac{0}{0}$, we can compute the limit using L'Hopital's Rule to get
+\begin{align*}
+	\lim_{x\to 1} \dfrac{x^2+ax+3}{(x-1)(x-b)} &= 6 \\
+	\lim_{x\to 1} \dfrac{2x+a}{(x-b)+(x-1)} &= 6 \\
+	\dfrac{2+a}{1-b} &= 6.
+\end{align*}Since $a=-4$, we have $1-b=-\dfrac{1}{3}$, and so $b=\dfrac{4}{3}$.
+
+Our answer is $\boxed{\left(-4,\dfrac{4}{3}\right)}$.\\
+
+\vspace{1cm}
+
+
+
+\textbf{Solution for Problem 6} We have that
+\[\lim_{x \rightarrow \infty} (nx)^{\frac{1}{mx}} = \lim_{x \rightarrow \infty} e^ {\left( \log \left ( (nx)^{\frac{1}{mx}} \right) \right)} = e^{ \left( \lim_{x \rightarrow \infty}  \frac{1}{mx} \log (nx) \right)}.\]Since both the numerator and denominator in $\frac{1}{mx} \log (nx)$ approach infinity as $x \rightarrow \infty$, we can use L'Hopital's rule:
+\[\lim_{x \rightarrow \infty} \frac{\log(nx)}{mx} = \lim_{x \rightarrow \infty} \frac{n/(nx)}{m} = 0.\]
+Therefore, the limit of the original function is $e^0 = \boxed{1}$.\\
+
+\vspace{1cm}
+
+
+\newpage
+\textbf{Solution for Problem 7} If we were to plug it in, we would get:
+
+\[\lim_{x \to 0}e^{x^2}\cot{x^2} = 0\cot0 = 0\cdot\infty\]
+
+which is one of our indeterminate limits.
+
+Thus, we turn it into a fraction to apply L'Hopital's Rule.
+
+\[\lim_{x \to 0}e^{x^2}\cot{x^2} = \lim_{x \to 0} \frac {e^{x^2}} {tan x^2} = \frac {0} {0}.\]
+
+\[ = \lim_{x \to 0} \frac {2xe^{x^2}} {2x \sec^{2}{x^2}}\]
+\[= \lim_{x \to 0} \frac {e^{x^2}} {\sec^{2}{x^2}}\]
+\[= \frac {0} {1}\]
+\[= \boxed{0}.\]
+
+\vspace{1cm}
+
+
+
+\textbf{Solution for Problem 8} If we straight up plug $x = 0$ into the limit, we would get $0^{0}$, which is one of our indeterminate limit forms. Thus, we would have to use the $\ln$ method.\\
+
+\[\displaystyle y = \lim_{x \to 0} 16 \left( e^x \right)^{e^{x}} \]
+\[\ln{y} = 16\lim_{x \to 0} \ln{\left( e^x \right)^{e^{x}}}\]
+\[\ln{y} = 16\lim_{x \to 0} e^{x} \ln{e^x}\]
+\[\ln{y} = 16 \cdot 1 \cdot 0\]
+\[\ln{y} = 0.\]
+
+So,
+
+\[y = \boxed{1}.\] 
+
+\vspace{1cm}
+
+
+\newpage
+\textbf{Solution for Problem 9} We are tempted to say that both $\sqrt{x^2 - x}$ and $\sqrt{x^2 + x}$ approach $x$ as $x \rightarrow \infty$, so the limit would be $0$. However, this is incorrect. Instead, we get rid of the square roots by multiplying by the conjugate:\\
+
+$$  \sqrt{x^2-x} - \sqrt{x^2+x} = \frac{\left( \sqrt{x^2-x} - \sqrt{x^2+x} \right)  \left( \sqrt{x^2-x} + \sqrt{x^2+x} \right)}{\sqrt{x^2-x} + \sqrt{x^2+x}}$$
+$$ = \frac{(x^2 - x) - (x^2 + x)}{ \sqrt{x^2-x} + \sqrt{x^2+x}} = \frac{-2x}{ \sqrt{x^2-x} + \sqrt{x^2+x}}.$$
+The limit of the last term is
+$$\lim_{x \rightarrow \infty} \frac{-2x}{ \sqrt{x^2-x} + \sqrt{x^2+x}} = \lim_{x \rightarrow \infty} \frac{-2}{\sqrt{1 - \frac{1}{x}} + \sqrt{1 + \frac{1}{x}}} = \frac{-2}{\sqrt{1 - 0} + \sqrt{1 + 0}} = -\frac{2}{2} = \boxed{-1}.$$
+
+\vspace{1cm}
+
+
+
+\textbf{Solution for Problem 10} Again, if we plug in directly, we would get $\infty^{0}$. So we must take log on both sides.
+
+\[\ln{y} = \lim_{x \to 0} \ln{\left( \cot{x} \right)^{\sin{x}}}\]
+\[\ln{y} = \lim_{x \to 0} \sin{x} \ln{\cot{x}}\]
+\[\ln{y} = 0\]
+\[y = \boxed{1}.\]
+
+\vspace{1cm}
+
+
+
+\textbf{Solution for Problem 11} We start by doing the $n$th term test.\\
+
+\[\lim_{n \to \infty} \left( 1 + n \right)^{\frac {1} {n}}\]
+\[= \infty^{0}.\]
+
+Since that is one of our indeterminate limits, we do the $\ln$ method.
+
+\[\ln{y} = \lim_{n \to \infty} \frac {1} {n} \ln{1 + n}\]
+\[\ln{y} = \frac {\infty {0}} = \infty.\]
+
+So it diverges.
+
+\vspace{1cm}
+
+\textbf{Solution for Problem 12} If we plug $n = \infty$ in, we would get $\infty^{\infty}$ which is indeterminate. Thus, we would need to use the $\ln$ trick.
+
+\[\ln{y} = \lim_{x \to \infty} x\ln{1 + \left( \frac {1} {2} \right)^{x}}\]
+
+\[\ln{y} = x \cdot \ln{1}\]
+\[\ln{y} = 0\]
+\[y = \boxed{1}.\]
+
+
+\vspace{1cm}
+
+\textbf{Solution for Problem 13} Ok so this might look pretty overwhelming at first, so lets break it down in to two pieces. The thing on the power and the base. Lets start with the power.\\
+
+\[\sum_{n = 1}^{x} \frac {1} {n}\]
+
+where $\lim_{x \to \infty},$ we could use the P-series rule to determine that since $p \le 1$, the series diverges, it $= \infty.$\\
+
+Putting this back into the original limit, we get:
+
+\[\displaystyle \lim_{x \to \infty} \left( 1 + \frac {1} {x} \right)^{\infty} \]
+\[= 1^{\infty}\]
+\[= \boxed{1}.\]
+
+
+
+\vspace{1cm}
+
+
+\textbf{Solution for Problem 14} Lets start by simply taking the integral:
+\[\displaystyle \int_{1}^{e} \frac {1} {\left( x - 1 \right)^{2}} - \frac {1} {x\ln^{2} \left( x \right)} dx\]
+
+The first term we can use power rule. The second term we use $u$ sub by setting $u = \ln{x}$. We get:
+\[= -\frac {1} {x - 1} + \frac {1} {\ln {x}}\]
+
+Now we plug in the intervals:
+
+\[= -\frac {1} {e - 1} + \frac {1} {1} + \frac {1} {0} - \frac {1} {0} = 1 = \frac {1} {e - 1} + \infty - \infty.\]
+
+However, $\infty - \infty$ is one of our indeterminate forms. So we have to use the fraction method.
+
+\[\lim_{x \to 1} \frac {1} {\ln{x}} - \frac {1} {x - 1}\]
+\[= \lim_{x \to 1} \frac {x - 1 - \ln{x}} {\ln{x}\left( x - 1 \right)}\]
+
+\[= \frac {0} {0}\]
+
+Now we apply L'Hopital's Rule:
+
+\[\lim_{x \to 1} \frac {1 - \frac {1} {x}} {\frac {1} {x} + 
+ln{x}}\]
+\[= \frac {1 - 1} {1 + 0} = \frac {0} {1}\]
+\[= \boxed{0}.\]
+
+\vspace{1cm}
+
+
+\textbf{Solution for Problem 15} We need $\displaystyle \lim_{x \rightarrow \infty} \frac{f(x) - g(x)(mx+b)}{g(x)} = 0$. This limit is 0 if the degree of the denominator is greater than the degree of the numerator. So we need
+\[
+\deg g(x) > \deg(f(x) - g(x)(mx+b)).
+\]But since $m \not= 0$, we have $\deg g(x)(mx+b) = (\deg g(x)) + 1$, so the only way that the degree of the numerator can be smaller than that of $g$ is if the two leading terms of $g(x)(mx+b)$ cancel with $f(x)$. But remember, we get to choose the $m$ and the $b$.
+
+Let $f(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots$ and let $g(x) = b_{n-1}x^{n-1} + b_{n-2}x^{n-2} + \cdots$, with $a_n$ and $b_{n-1}$ nonzero. Then setting $m = a_n/b_{n-1}$ and $b = (a_{n-1}-mb_{n-2})/b_{n-1}$ will cause both the $x^n$ and $x^{n-1}$ terms to vanish in $f(x) - g(x)(mx+b)$.
+
+Thus, $f/g$ will have a slant asymptote if and only if $\deg f = \deg g + 1$.
+
+A simpler way to compute the slant asymptote, assuming the degree of $f$ is one more than the degree of $g$, is to perform the first two steps of long division. The result will be an expression
+\[
+\frac{f(x)}{g(x)}=mx+b+\frac{r(x)}{g(x)},
+\]where the quotient will be linear, and the ``remainder'' $\tfrac rg$ will have limit 0 as $x$ approaches $\infty$.)\\
+
+\vspace{1cm}
+
+
+
+
+
+\end{document}

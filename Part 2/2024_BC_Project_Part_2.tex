@@ -1,0 +1,551 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{AP Calculus BC Project Topic 2 4th Hour}
+\author{William Li, 10th Grade}
+\date{May 2024}
+\setlength{\parindent}{0pt}
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+
+\topmargin 0in
+\headheight 0in
+\headsep 0in
+\textheight 9in
+\textwidth 6.5in
+\oddsidemargin 0in
+\evensidemargin 0in
+
+% Macros
+\newcommand \der {\frac {dy} {dx}}
+\newcommand \ders {\left( \frac {dy} {dx} \right)^{2}}
+\newcommand \dder {\dfrac {dy} {dx}}
+\newcommand \derr {\frac {d^{2}y} {dx^2}}
+\newcommand \derrr {\frac {d^{3}y} {dx^3}}
+\newcommand \deralpha {\frac {d\beta} {d\alpha}}
+
+\usepackage{amsmath} 
+\usepackage[utf8]{inputenc}
+\usepackage{comment}
+\usepackage{ctex}
+
+\usepackage{amssymb}
+
+
+\def\quad{\hskip1em\relax}
+\def\qquad{\hskip2em\relax}
+
+\begin{comment}
+
+\usepackage{ctex}
+\usepackage{ctex}
+\usepackage{ctex}
+
+adding the following package, it resolves the error for \mathbb{R}
+\usepackage{amssymb}
+
+this section will be commenting out the whole block 
+\addtolength{\voffset}{-4cm}
+\addtolength{\voffset}{4cm}
+\end{comment}
+
+\begin{document}
+
+\maketitle
+
+\LARGE Part 1: Introduction
+
+\hspace{1cm}
+
+\Large Topic: Implicit Differentiation
+
+Sources: AoPS Calculus Book, AoPS Calculus Lecture Problems, Demidovich Mathematical Analysis Book, Khan Academy, and Myself.
+
+
+
+\newpage
+
+\begin{comment}
+	Implicit Differentiation Problems
+\end{comment}
+
+\LARGE Part 2: Problems
+
+\vspace{2cm}
+
+\large
+
+\textbf{Problem 1} Find the slope of the tangent line to the circle $x^2 + y^2 = 1$ at the point $\left( \dfrac {\sqrt{2}} {2}, \dfrac {\sqrt {2}} {2} \right)$.\\
+\textit{Source: Art of Problem Solving Calculus Book.}
+
+\vspace{1cm}
+
+\textbf{Problem 2} If $y^3 + 4y + 4 = x^2$, and both $x$ and $y$ are real numbers, what is the derivative of $y$ at $x = 2$?\\
+\textit{Source: I made it up.}
+
+\vspace{1cm}
+
+\textbf{Problem 3} Find $\dfrac {dy} {dx}$ if $x^2 + y = \ln(y^2 - 1)$.\\
+\textit{Source: Art of Problem Solving Calculus Book.}
+
+\vspace{1cm}
+
+\textbf{Problem 4} Find the first derivative of $\frac {y} {x} = \ln \sqrt{x^2 + y^2}$.\\
+\textit{Source: Demidovich Mathematical Analysis Problems.}\\
+
+\vspace{1cm}
+
+\textbf{Problem 5} The graph of $xy^4 + x^2y = 10$ has a horizontal tangent at the point $(a , b)$. What is the value of $a^2b^4$?\\
+\textit{Source: Art of Problem Solving College Math Forum}
+
+\vspace{1cm}
+
+\textbf{Problem 6} Prove the derivative of $y = a^x$ using implicit differentiation Hint: What if we take the $\ln$ of both sides?\\
+\textit{Source: I made it up.}
+
+\vspace{1cm}
+
+\textbf{Problem 7} Find $y^{\prime} (2)$ if $y = 5x^{2 + 3x + 2xy}$, and $y(2) = -5$.\\
+\textit{Source: Art of Problem Solving.}
+
+\vspace{1cm}
+\newpage
+
+\textbf{Problem 8} Let $\beta$ be the dependent variable and let $f(\alpha, \beta) = \sin\alpha \cos\alpha + \sin\beta \cos\beta = 0.$ Prove that
+
+\[d\alpha = -d\beta.\]
+
+\textit{Source: I made it up.}
+
+\vspace{1cm}
+
+\textbf{Problem 9} There are 2 lines that are tangent to the ellipse $3x^2 - 72x + y^2 +26 = 0$, and pass through the origin. Find the equation of the line with the smaller slope.\\
+\textit{Source: I made it up}
+
+\vspace{1cm}
+
+\textbf{Problem 10} 2 circles, have equations
+\[y^2 + x^2 = 1.\]
+and
+\[y^2 + (x - 3)^2 = 4.\]
+respectfully.
+
+Find the equation of the line tangent to both circles.\\
+\textit{Source: Art of Problem Solving.}
+
+\vspace{1cm}
+
+\textbf{Problem 11} Find $\dfrac {d^2y} {dx^2}$ if $y^2 = \dfrac {x^3} {4 - x}$.\\
+\textit{Source: Khan Academy.}
+
+\vspace{1cm}
+
+\textbf{Problem 12} Find $\dfrac {d^2y} {dx^2}$ at $x = 1$ and $y = 2$, if $8x^2y + 2\ln(xy) = 7$.\\
+\textit{Source: Khan Academy.}
+
+\vspace{1cm}
+
+\textbf{Problem 13} Find $\dfrac {d^3y} {dx^3}$ of $x^2 + 6xy + y^2 = 4$ on the point $\left( 1, 5 \right)$.\\
+\textit{Source: I made it up.}
+
+\vspace{1cm}
+
+\textbf{Problem 14} Let $g\left( x, y \right) = 1 + xy + \left( xy \right)^2 + \left( xy \right)^3 + ... + \left( xy \right)^{100}$. If $\dfrac {dy} {dx} = -1$ for all real $x$ and $y$, find $g^{\prime}\left( \frac {1} {2}, 2 \right)$.\\
+\textit{Source: I made it up.}
+
+\vspace{1cm}
+
+\begin{comment}
+	\textbf{Problem 14} The 2 functions $4x^2 + ay^2 - 36 = 0$ and $bx^2 + 25y^2 -100 = 0$ have the same absolute minimum point. Find $ab$. \\ 
+	\textit{Source: I made it up.}
+	
+	\vspace{1cm}
+	
+\end{comment}
+
+\newpage
+
+\textbf{Problem 15} Let $y = f(x)$ be a function of $x$ such that
+\[x^2y^2 + x^2 + y^2 - 1 = 0.\]
+Prove that:
+\[\dfrac {dx} {\sqrt{1 - x^4}} + \dfrac {dy} {\sqrt{1 - y^4}} = 0.\]
+\\
+\textit{Source: Art of Problem Solving College Math Forum.}
+
+\newpage
+
+\begin{comment}
+	Implicit Differentiation Solutions
+\end{comment}
+
+\LARGE Part 3: Solutions
+
+\vspace{2cm}
+
+\large
+
+\textbf{Solution for Problem 1} First let's find the expression for the slope, which is $\dfrac {dy} {dx}$. 
+
+\[2x + 2y\frac {dy} {dx} = 0\]
+\[\frac {dy} {dx} = -\frac {x} {y}.\]
+
+Thus, the slope at $\left( \dfrac {\sqrt{2}} {2}, \dfrac {\sqrt {2}} {2} \right)$ is $-\dfrac { \dfrac {\sqrt{2}} {2} } { \dfrac {\sqrt {2}} {2} } = -1.$\\
+
+\textbf{Solution for Problem 2} First, we take the implicit derivative of our given function:\\
+
+\[3y^2\der + 4\der = 2x\]
+
+Moving the variables, we get
+
+\[ \der \left( 3y^2 + 4 \right) = 2x \]
+\[ \der = \frac {2x} {3y^{2} + 4}. \]
+
+The problem asks us to find the derivative at $x = 2$, so by plugging in the $x$ value, we can find the $y$ value and calculate the derivative.
+
+\[ y^3 + 4y + 4 = 2^2 \]
+\[ y\left( y^2 + 4 \right) = 0 \]
+
+We can see that $y = 0$ or $y^2 + 4 = 0$, but since $y$ is real, $y$ must be equal to $0$.
+
+Thus, the derivative at $x = 2$ is $\dfrac {2 \cdot 2} {0 + 4} = \boxed{1}.$
+
+\newpage
+
+\textbf{Solution for Problem 3} Very straight-forward:\\
+
+\[ 2x + \der = 2y \der \cdot \frac {1} {y^2 - 1} \]
+\[ \der \left( 1 - \frac {2y} {y^2 - 1} \right) = -2x \]
+\[ \der = \dfrac {2x} {\frac {2y - y^2 + 1} {y^2 - 1}} \]
+\[ = \dfrac {2x\left( y^2 - 1 \right)} {-y^2 + 2y + 1} \]
+\[ = \dfrac {2x - 2xy^{2}} {y^2 - 2y - 1} \]
+
+\vspace{1cm}
+
+\textbf{Solution for Problem 4} Start with quotient rule: \\
+
+\[ \dfrac {x\der - y} {x^2} = \left( 2x + 2y\der \right) \cdot \frac {1} {2} \left( x^2 + y^2 \right)^{- \frac {1} {2}} \cdot \dfrac {1} {\sqrt {x^2 + y^2}} \]
+\[ \dfrac {x\der - y} {x^2} = \frac {1} {2} \left( 2x + 2y\der \right) \cdot \dfrac {1} {x^2 + y^2} \]
+
+\[ x\der - y = \dfrac {x^2 \cdot 2x} {2\left( x^2 + y^2 \right)} + \dfrac {x^2 \cdot 2y} {2 \left( x^2 + y^2 \right)} \der \]
+\[ \left( x - \dfrac {x^2y} {x^2 + y^2} \right)\dder = \frac {x^3} {x^2 + y^2} + y \]
+\[ \boxed{\dder = \dfrac {x^3 + x^2y + y^3} {x^3 + xy^2 - x^2y}}. \]
+
+
+\vspace{1cm}
+
+\newpage
+
+\textbf{Solution for Problem 5} We start by finding $\der$ because that's the expression for the slope of a tangent line to the function. \\
+
+\[ y^4 + 4xy^3\der + 2xy + \der x^2 = 0 \]
+\[ \der \left( 4xy^3 + x^2 \right) = -y^4 - 2xy \]
+\[ \der = \dfrac {-y^4 - 2xy} {4xy^3 + x^2} \]
+
+We need $\der = 0$. Thus,
+
+\[-y^4 - 2xy = 0\]
+\[y^4 = 2xy\]
+\[x = \frac {y^3} {2}\]
+
+Plugging back into our original equation, we get:
+
+\[ \frac {y^3} {2} \cdot y^4 + \frac {y^6} {4} \cdot y = 10 \]
+\[ 3y^7 = 40 \]
+\[ y = \sqrt[7]{\frac {40} {3}} \]
+
+Now we can find the $x$ value
+
+\[ x = \frac {1} {2} \left( \frac {40} {3} \right)^{\frac {3} {7}} \]
+
+The problem asks for the $x$ value squared times the $y$ value to the power of 4.
+
+\[ a^2b^4 = \frac {1} {4} \left( \frac {40} {3} \right)^{\frac {6} {7}} \cdot \left( \frac {40} {3} \right)^{\frac {4} {7}} \]
+\[ = \frac {1} {4} \left( \frac {40} {3} \right)^{\frac {10} {7}} \]
+
+\vspace{1cm}
+
+\newpage
+
+\textbf{Solution for Problem 6} First, we take the $\ln$ of both sides. \\
+
+\[ \ln{y} = \ln{a^x} \]
+\[ \ln{y} = x\ln{a} \]
+
+Now we take the implicit differentiation:
+
+\[ \der \frac {1} {y} = \ln{a} \]
+
+Substitute $y = a^x$ back in recursively:
+
+\[ \der \frac {1} {a^x} = \ln{a} \]
+\[ \der = \ln{a}a^x. \]
+
+\vspace{1cm}
+
+\textbf{Solution for Problem 7} Very similar to the last problem, we start by taking the $\ln$ on both sides.\\
+
+\[ \ln{y} =  \ln{5x^{2 + 3x + 2xy}} \]
+
+Applying 2 log identities, we get: 
+
+\[ \ln{y} = \ln{5} + \left( 2 + 3x + 2xy \right)\ln{x} \]
+
+Now we take the implicit derivative
+
+\[ \der \frac {1} {y} = \left( 3 + 2y + 2x\der \right)\ln{x} + \dfrac {2 + 3x + 2xy} {x} \]
+\[ \der \left( \frac {1} {y} - 2x\ln{x} \right) = 3\ln{x} + 2y\ln{x} + \dfrac {2 + 3x + 2xy} {x} \]
+
+Since the problem gave us $y(2) = -5$, they gave us the point $\left( 2, -5 \right)$ and we plug that in to get $y^{\prime}(2)$.
+\[ y^{\prime}(2) = \dfrac {-7\ln{2} - 6} {-\frac {1} {5} - 4\ln{2}} \]
+\[ = \boxed{\dfrac {35\ln{2} + 30} {20\ln{2} + 1}}. \]
+
+\vspace{1cm}
+
+
+\textbf{Solution for Problem 8} We start by taking the implicit derivative of the given function:\\
+
+\[ -\cos\alpha \sin\alpha - \frac {d\beta} {d\alpha} \cos\beta \sin\beta = 0 \]
+\[ \deralpha = \frac {\cos\alpha \sin\alpha} {\cos\beta \sin\beta}. \]
+
+If we look back to the original function, we see that $\sin\alpha \cos\alpha = -\sin\beta \cos\beta$,
+
+Thus,
+\[ \deralpha = -1 \]
+\[ d\beta = -d\alpha \]
+\[ \boxed{d\alpha = -d\beta}. \]
+
+\vspace{1cm}
+
+
+\textbf{Solution for Problem 9} We start by finding the expression for the slope of a tangent line to the ellipse.\\
+
+\[6x - 72 + 2y \der = 0\]
+\[\der = \frac {72 - 6x} {2y} = \frac {36 - 3x} {y}.\]
+
+For a line to pass through the origin and have the slope $\der$, it must be in the form:
+
+\[y = \frac {36 - 3x} {y} x\]
+
+Thus,
+
+\[y^2 = 36x - 3x^2\]
+
+Plugging back into the origin equation, we get:
+\[3x^2 - 72x + 36x - 3x^2 + 26 = 0\]
+\[-36x = -26\]
+\[x = \frac {13} {18}.\]
+
+Now we find $y$
+
+\[y^2 = 36 \cdot \frac {13} {18} - 3 \left( \frac {13} {18} \right)^{2}\]
+\[y^2 = 26 - \frac {507} {324}\]
+\[y = \sqrt{\frac {7917} {324}}\]
+
+Therefore, our equation of the line is:
+
+\[y = \frac {36 - \frac {13} {18}} {\sqrt{\frac {7917} {324}}}x\]
+
+\newpage
+
+
+\textbf{Solution for Problem 10} First, we find the derivative expression for both circles.\\
+Circle 1:
+\[2y\der + 2x = 0\]
+\[\der = -\frac {x} {y}.\]
+
+Circle 2:
+\[2y\der + 2x - 6 = 0\]
+\[\der = \frac {3 - x} {y}.\]
+
+Now we set them equal since the problem states that there is a line tangent to both circles.
+
+\[-\frac {x} {y} \frac {3 - x} {y}.\]
+
+Cross-multiplying, we get:
+
+\[-xy = 3y - xy\]
+\[3y = 0\]
+\[y = 0.\]
+
+Now we plug $y$ back into any of the two circles to find $x$.
+
+\[0^2 + x^2 = 1\]
+\[x = \pm 1.\]
+
+Now how do we determine which one is the real $x$ value of their intersection? Since the circle equations are simple, we know that the second circle is located to the right of the first circle, which is centered at $(0, 0)$, so $x$ has to be $1$.
+
+Thus,
+\[\der = -\frac {1} {0} = \infty\]
+
+This doesn't mean it doesn't exist, it means that the slope is perfectly vertical.
+
+Thus, the equation of the tangent line is:
+
+\[\boxed{x = 1}\]
+
+
+\vspace{1cm}
+
+
+\textbf{Solution for Problem 11} Get rid of fractions:\\
+
+\[y^2\left( 4 - x \right) = x^3\]
+\[4y^2 - xy^2 = x^3\]
+\[8y\der - y^2 - 2xy\der = 3x^2\]
+\[\der = \frac {3x^2 + y^2} {2xy - 8y}\]
+
+Now we take the implicit derivative again to find the 2nd derivative:
+
+\[8\der \der + 8y \derr - 2y\der - \left( 2y + 2x\der \right)\der - \derr 2xy = 0\]
+\[\derr \left( 8y - 2xy\right) = 6x - 8\ders + 2y\der + 2y\der + 2x\ders \]
+\[\derr = \dfrac {6x + \left( 2x - 8 \right) \ders + 4y\der} {8y - 2xy}\]
+\[\derr = \dfrac {6x + \left( 2x - 8 \right)\left( \frac {3x^2 + y^2} {2xy - 8y} \right)^{2} + 4y\frac {3x^2 + y^2} {2xy - 8y}} {8y - 2xy}\]
+
+
+\vspace{1cm}
+
+\textbf{Solution for Problem 12} 
+
+\[ 16xy + 8x^2\der + 2\left( y + x\der \right)\frac {1} {xy} = 0\]
+
+
+\[16y + 16y\der + 16x\der + 8x^2\derr - 2x^{-2} - 2y^{-2}\der + 2y^{-1}\derr = 0\]
+
+\[\der \left( \frac {2} {y} + 8x^2 \right) = -16xy - \frac {2} {x}\]
+\[\der = \dfrac {-16xy - \frac {2} {x}} {8x^2 + \frac {2} {y}}\]
+
+So our first derivative is:
+\[= -\frac {8x^2y^2 + y} {4x^2y + x}\]
+
+\newpage
+
+Now let us find the second derivative:
+
+\[\derr \left( 8x^2 + 2y^{-1} \right) = -16y - 16x\der = 16x\der + 2x^{-2} + 2y^{-2}\der\]
+\[\derr = \dfrac {2x^{-2} - 16y + \left( 2y^{-2} - 32x \right)\der} {8x^2 + 2y^{-1}}\]
+\[= \dfrac {\frac {2} {x} - 16y -\frac {8x^2y^2 + y} {4x^2y + x}\left( \frac {2} {y} - 32x \right)} {8x^2 + \frac {2} {y}}\]
+\[= \dfrac {2 - 32 - \frac {34} {9} \cdot (-31)} {9}\]
+\[ = \frac {-270 + 34 \cdot 31} {81} = \boxed{\frac {784} {81}}.\]
+
+\vspace{1cm}
+
+\textbf{Solution for Problem 13} Finding the first derivative: //
+
+\[2x + 6y + 6x\der + 2y\der = 0\]
+\[\der = \frac {-2x - 6y} {6x + 2y}\]
+\[\der = -\frac {x + 3y} {3x + y}\]
+\[\der = -2.\]
+
+Now we find the second derivative:
+
+\[2 + 6\der + 6\der + 6x\derr + 2\der \cdot \der + 2y \derr = 0\]
+
+We will use the above expression to find the third derivative
+
+\[\derr \left( 6x + 2y \right) = -2\ders - 12\der - 2\]
+\[\derr = -\dfrac {2\ders + 12\der + 2} {6x + 2y}\]
+\[\derr = -\frac {8 - 24 + 2} {6 + 10} = \frac {14} {16} = \frac {7} {8}.\]
+
+Now let's find the third derivative:
+
+\[6\derr + 6\derr + 6\derr + 6x\derrr + 2\derr \der + 2\der \derr + 2\der \derr + 2y \derrr = 0\]
+\[\derrr \left( 6x + 2y \right) = -18\derr - 6\der \derr\]\[\derrr = -\dfrac {9\derr + 3\der \derr} {3x + 1}\]
+\[\derrr = -\frac {9 \cdot \frac {7} {8} + 3 \cdot (-2) \cdot \frac {7} {8}} {3 + 1}\]
+\[= -\frac {\frac {21} {8}} {4} = \boxed{-\frac {21} {32}}.\]
+
+\vspace{1cm}
+
+
+\textbf{Solution for Problem 14} This one is a really weird problem, but don't give up after just looking at it, give it a try, and find a pattern!\\
+
+If we were to take the implicit derivative of the first 3 terms, we would get
+
+\[0 + y + x\der + 2xy \left( y + x\der \right).\]
+
+Since the problem gave us $\der = -1$, plugging it in would leave us with:
+
+\[y - x + 2xy\left( y - x \right).\]
+
+Notice that if we were to continue writing down terms, we would have a general structure of:
+
+\[n\left(xy\right)^{n - 1}\left( y - x \right)\]
+
+for each term. Also, the problem wanted us to find the derivative at $x = \frac {1} {2}$ and $y = 2$, which luckily for us, makes $xy = 1$. Using this, we get:
+
+\[y - x + y - x + y - x + ...\]
+\[= 2 - \frac {1} {2} + 2 - \frac {1} {2} + 2 - \frac {1} {2} + ...\]
+
+With $99$ terms in total.
+
+Thus, we have $2 \cdot 99 - \frac {1} {2} \cdot 99 = \boxed{\frac {297} {2}}.$
+
+\vspace{1cm}
+
+
+\textbf{Solution for Problem 15} Since nobody posted any solutions, the approach I thought of was pretty straightforward. So our goal is to prove that $\dfrac {dx} {\sqrt{1 - x^4}} + \dfrac {dy} {\sqrt{1 - y^4}} = 0$ is true. Notice that we have to get $1 - x^4$ and $1 - y^4$ somehow.
+
+Let's start by finding $\dfrac {dy} {dx}$ of our given function, $f(x) = x^{2}y^{2} + x^{2} + y^{2} - 1 = 0.$
+
+Using implicit differentiation, we get the following:
+
+\[ 2xy^{2} + 2y\frac {dy} {dx}x^{2} + 2x + 2y\frac {dy} {dx} = 0 \]
+\[ \frac {dy} {dx} \left( 2x^{2}y + 2y \right) = -2xy^{2} - 2x \]
+\[ \dfrac {dy} {dx} = -\dfrac {2xy^{2} + 2x} {2x^{2}y + 2y}. \]
+
+Factoring out $2x$ and $2y$ on the numerator and denominator respectfully, we get:
+
+\[ \dfrac {dy} {dx} = -\dfrac {2x \left( y^{2} + 1 \right)} {2y \left( x^{2} + 1 \right)} \]
+
+\[ \dfrac {dy} {dx} = -\dfrac {x \left( y^{2} + 1 \right)} {y \left( x^{2} + 1 \right)}. \]
+
+We see that the numerator and denominator are nearly symmetrical with the $x$ swapped with $y$. So how do we get $1 - x^4$? If we find out how to get that, then we could do the same thing to get $1 - y^4$ because of symmetry.\\
+
+This is where the hardest part of the problem comes into play.\\
+First, from our original equation, notice that
+
+\[x^{2}y^{2} + x^{2} + y^{2} - 1 = 0\]
+
+can be turned into
+
+\[x^{2} \left( y^2 + 1 \right) = 1 - y^2.\]
+
+by factoring the $x^2$ and moving the rest to the right-hand side.\\
+
+Thus, we can square both sides to get
+
+\[ \left( \dfrac {dy} {dx} \right)^{2} = \dfrac {x^2 \left( y^{2} + 1 \right)^{2}} {y^2 \left( x^{2} + 1 \right)^{2}}. \]
+
+
+
+Thus using symmetry (we could also factor $y^2$ out), our equation becomes:
+
+\[ \left( \dfrac {dy} {dx} \right)^{2} = \dfrac {x^2 \left( y^{2} + 1 \right)^{2}} {y^2 \left( x^{2} + 1 \right)^{2}} = \dfrac {x^2 \left( y^{2} + 1 \right)\left( y^{2} + 1 \right)} {y^2 \left( x^{2} + 1 \right)\left( x^{2} + 1 \right)} = \dfrac {\left( 1 - y^2 \right) \left( y^2 + 1 \right)} {\left( 1 - x^2 \right) \left(x^2 + 1 \right)} \]
+
+Because $\left( a^2 + b^2 \right) \left( a^2 - b^2 \right) = a^4 - b^4$ we get
+
+\[ \left( \dfrac {dy} {dx} \right)^{2} = \dfrac {1 - y^4} {1 - x^4}. \]
+
+Now we could take the square root of both sides.
+
+\[\dfrac {dy} {dx} = -\dfrac {\sqrt{1 - y^4}} {\sqrt{1 - x^4}}.\]
+
+Note that there has to be a negative there because when we squared both sides, there was also a negative there.
+
+Cross-multiplying, we get
+
+\[dy\sqrt{1 - x^4} = -dx\sqrt{1 - y^4}\]
+\[dx\sqrt{1 - y^4} + dy\sqrt{1 - x^4} = 0\]
+
+Finally, we divide both sides by $\sqrt{1 - x^4}\sqrt{1 - y^4}$ and get
+
+\[ \boxed{\dfrac {dx} {\sqrt{1 - x^4}} + \dfrac {dy} {\sqrt{1 - y^4}} = 0}. \]
+
+And we are done with our proof.
+
+
+
+
+
+
+\end{document}
